@@ -1,5 +1,51 @@
-$bgColor: rgb(0, 47, 255);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: #e8e6e7;
+}
+
+header {
+    padding: 20px 70px;
+    background-color: #1d1d1f;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__logo {
+        width: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+
+        &__item{
+            color: #888;
+            font-weight: 600;
+            padding-bottom: 4px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+
+            &__check {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
 }
